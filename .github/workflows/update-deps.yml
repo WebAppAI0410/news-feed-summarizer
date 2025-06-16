@@ -1,0 +1,64 @@
+name: Update Dependencies
+
+on:
+  schedule:
+    # 毎週月曜日の朝9時（JST）に実行
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Update dependencies
+        run: |
+          npm update
+          npm audit fix || true
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes detected"
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore(deps): update dependencies'
+          title: '🔄 依存関係の更新'
+          body: |
+            ## 依存関係の自動更新
+
+            このPRは以下の更新を含みます：
+            - npmパッケージの更新
+            - セキュリティ脆弱性の修正
+
+            ### 確認事項
+            - [ ] ビルドが成功している
+            - [ ] 型チェックが通っている
+            - [ ] ESLintチェックが通っている
+
+            ---
+            🤖 このPRは自動生成されました
+          branch: deps/update-${{ github.run_number }}
+          labels: |
+            dependencies
+            automated

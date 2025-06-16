@@ -1,0 +1,19 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/fetch-feeds",
+      "schedule": "0 9 * * *"
+    }
+  ],
+  "functions": {
+    "src/app/api/cron/fetch-feeds/route.ts": {
+      "maxDuration": 60
+    },
+    "src/app/api/summarize/route.ts": {
+      "maxDuration": 60
+    }
+  },
+  "env": {
+    "NODE_ENV": "production"
+  }
+}

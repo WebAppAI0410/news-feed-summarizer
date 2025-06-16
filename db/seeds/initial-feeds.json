@@ -1,0 +1,462 @@
+[
+  {
+    "title": "首相官邸 - 新着情報",
+    "url": "https://www.kantei.go.jp/jp/n5-common/img/rss.gif",
+    "description": "首相官邸の新着情報",
+    "category": "政府・官公庁",
+    "source": "首相官邸",
+    "organization": "首相官邸",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "外務省 - 海外安全情報（全世界）",
+    "url": "https://www.anzen.mofa.go.jp/rss/news.xml",
+    "description": "全世界の海外安全情報",
+    "category": "政府・官公庁",
+    "source": "外務省",
+    "organization": "外務省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "経済産業省 - 新着情報",
+    "url": "https://www.meti.go.jp/rss/",
+    "description": "経済産業省の新着情報",
+    "category": "政府・官公庁",
+    "source": "経済産業省",
+    "organization": "経済産業省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "財務省 - 新着情報",
+    "url": "https://www.mof.go.jp/news.rss",
+    "description": "財務省の新着情報",
+    "category": "政府・官公庁",
+    "source": "財務省",
+    "organization": "財務省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "文部科学省 - 最新の更新情報",
+    "url": "https://www.mext.go.jp/b_menu/news/index.rdf",
+    "description": "文部科学省の最新の更新情報",
+    "category": "政府・官公庁",
+    "source": "文部科学省",
+    "organization": "文部科学省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "厚生労働省 - 新着情報",
+    "url": "https://www.mhlw.go.jp/stf/news.rdf",
+    "description": "厚生労働省の新規掲載・更新情報",
+    "category": "政府・官公庁",
+    "source": "厚生労働省",
+    "organization": "厚生労働省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "厚生労働省 - 緊急情報",
+    "url": "https://www.mhlw.go.jp/stf/kinkyu.rdf",
+    "description": "厚生労働省の緊急情報",
+    "category": "政府・官公庁",
+    "source": "厚生労働省",
+    "organization": "厚生労働省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "国土交通省 - 重要なお知らせ",
+    "url": "https://www.mlit.go.jp/important.rdf",
+    "description": "国土交通省の重要なお知らせ",
+    "category": "政府・官公庁",
+    "source": "国土交通省",
+    "organization": "国土交通省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "国土交通省 - プレスリリース",
+    "url": "https://www.mlit.go.jp/pressrelease.rdf",
+    "description": "国土交通省のプレスリリース",
+    "category": "政府・官公庁",
+    "source": "国土交通省",
+    "organization": "国土交通省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "国土交通省 - 災害情報",
+    "url": "https://www.mlit.go.jp/saigai.rdf",
+    "description": "国土交通省の災害情報",
+    "category": "政府・官公庁",
+    "source": "国土交通省",
+    "organization": "国土交通省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "環境省 - 脱炭素ポータル",
+    "url": "https://ondankataisaku.env.go.jp/carbon_neutral/rss.xml",
+    "description": "脱炭素・カーボンニュートラル関連情報",
+    "category": "政府・官公庁",
+    "source": "環境省",
+    "organization": "環境省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "防衛研究所（NIDS）- 新着情報",
+    "url": "http://www.nids.mod.go.jp/rss/nids.rdf",
+    "description": "防衛研究所の新着情報",
+    "category": "政府・官公庁",
+    "source": "防衛省",
+    "organization": "防衛研究所",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "デジタル庁 - 新着・更新情報",
+    "url": "https://www.digital.go.jp/rss/news.xml",
+    "description": "デジタル庁の新着・更新情報",
+    "category": "政府・官公庁",
+    "source": "デジタル庁",
+    "organization": "デジタル庁",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "日本銀行 - 一般更新情報",
+    "url": "https://www.boj.or.jp/rss/whatsnew.xml",
+    "description": "日本銀行の主に更新情報のタイトル",
+    "category": "政府・官公庁",
+    "source": "日本銀行",
+    "organization": "日本銀行",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "日本銀行 - 統計情報",
+    "url": "https://www.boj.or.jp/rss/statistics.xml",
+    "description": "公表統計、統計の見直し・訂正等のお知らせ",
+    "category": "政府・官公庁",
+    "source": "日本銀行",
+    "organization": "日本銀行",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "内閣府 - 新着情報",
+    "url": "https://www.cao.go.jp/rss/news.rdf",
+    "description": "記者公表資料、開催案内、会議資料、統計情報、調査報告等",
+    "category": "政府・官公庁",
+    "source": "内閣府",
+    "organization": "内閣府",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "総務省 - 新着情報",
+    "url": "https://www.soumu.go.jp/news.rdf",
+    "description": "総務省の新着情報",
+    "category": "政府・官公庁",
+    "source": "総務省",
+    "organization": "総務省",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "パナソニック - 企業向けソリューション",
+    "url": "https://news.panasonic.com/jp/rss/category/products-solutions/btob.xml",
+    "description": "パナソニックの企業向けソリューション情報",
+    "category": "企業",
+    "source": "パナソニック",
+    "organization": "パナソニック株式会社",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "パナソニック - デバイス",
+    "url": "https://news.panasonic.com/jp/rss/category/products-solutions/devices.xml",
+    "description": "パナソニックのデバイス関連情報",
+    "category": "企業",
+    "source": "パナソニック",
+    "organization": "パナソニック株式会社",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "パナソニック - 自動車",
+    "url": "https://news.panasonic.com/jp/rss/category/products-solutions/auto.xml",
+    "description": "パナソニックの自動車関連情報",
+    "category": "企業",
+    "source": "パナソニック",
+    "organization": "パナソニック株式会社",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "ソニー - プレスリリース",
+    "url": "https://www.sony.co.jp/SonyInfo/News/Press/rss/pressjp.rdf",
+    "description": "ソニーのプレスリリース、企業ニュース",
+    "category": "企業",
+    "source": "ソニー",
+    "organization": "ソニーグループ株式会社",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "日経ビジネス電子版",
+    "url": "https://business.nikkei.com/rss/sns/nb.rdf",
+    "description": "日経ビジネスの最新記事",
+    "category": "メディア",
+    "source": "日経ビジネス",
+    "organization": "日本経済新聞社",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "日経クロステック",
+    "url": "https://xtech.nikkei.com/rss/index.rdf",
+    "description": "日経クロステックの技術情報",
+    "category": "メディア",
+    "source": "日経クロステック",
+    "organization": "日本経済新聞社",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "朝日新聞デジタル",
+    "url": "https://www.asahi.com/rss/index.rdf",
+    "description": "朝日新聞の総合ニュース",
+    "category": "メディア",
+    "source": "朝日新聞",
+    "organization": "朝日新聞社",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "NHKニュース",
+    "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+    "description": "NHKの総合ニュース",
+    "category": "メディア",
+    "source": "NHK",
+    "organization": "日本放送協会",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "NHK - 主要ニュース",
+    "url": "https://www3.nhk.or.jp/rss/news/cat1.xml",
+    "description": "NHKの主要ニュース",
+    "category": "メディア",
+    "source": "NHK",
+    "organization": "日本放送協会",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "NHK - 経済",
+    "url": "https://www3.nhk.or.jp/rss/news/cat6.xml",
+    "description": "NHKの経済ニュース",
+    "category": "メディア",
+    "source": "NHK",
+    "organization": "日本放送協会",
+    "language": "ja",
+    "country": "JP"
+  },
+  {
+    "title": "Apple - ニュースルーム",
+    "url": "https://www.apple.com/newsroom/rss-feed.rss",
+    "description": "Appleのプレスリリース、製品発表",
+    "category": "企業",
+    "source": "Apple",
+    "organization": "Apple Inc.",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "Microsoft - News Center",
+    "url": "https://news.microsoft.com/feed/",
+    "description": "Microsoftのプレスリリース、企業ニュース",
+    "category": "企業",
+    "source": "Microsoft",
+    "organization": "Microsoft Corporation",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "Google Blog",
+    "url": "https://blog.google/rss/",
+    "description": "Googleの製品アップデート、企業ニュース",
+    "category": "企業",
+    "source": "Google",
+    "organization": "Google LLC",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "Amazon - Press Releases",
+    "url": "https://press.aboutamazon.com/rss/news-releases.xml",
+    "description": "Amazonのプレスリリース",
+    "category": "企業",
+    "source": "Amazon",
+    "organization": "Amazon.com, Inc.",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "Wall Street Journal - Markets",
+    "url": "https://feeds.a.dj.com/rss/RSSMarkets.xml",
+    "description": "WSJのマーケット情報",
+    "category": "メディア",
+    "source": "Wall Street Journal",
+    "organization": "Dow Jones & Company",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "Wall Street Journal - Technology",
+    "url": "https://feeds.a.dj.com/rss/RSSWSJD.xml",
+    "description": "WSJのテクノロジーニュース",
+    "category": "メディア",
+    "source": "Wall Street Journal",
+    "organization": "Dow Jones & Company",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "Wall Street Journal - World News",
+    "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml",
+    "description": "WSJの世界ニュース",
+    "category": "メディア",
+    "source": "Wall Street Journal",
+    "organization": "Dow Jones & Company",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "Financial Times - World",
+    "url": "https://www.ft.com/world?format=rss",
+    "description": "FTの世界ニュース",
+    "category": "メディア",
+    "source": "Financial Times",
+    "organization": "Financial Times",
+    "language": "en",
+    "country": "UK"
+  },
+  {
+    "title": "Financial Times - Companies",
+    "url": "https://www.ft.com/companies?format=rss",
+    "description": "FTの企業ニュース",
+    "category": "メディア",
+    "source": "Financial Times",
+    "organization": "Financial Times",
+    "language": "en",
+    "country": "UK"
+  },
+  {
+    "title": "Financial Times - Markets",
+    "url": "https://www.ft.com/markets?format=rss",
+    "description": "FTの金融市場ニュース",
+    "category": "メディア",
+    "source": "Financial Times",
+    "organization": "Financial Times",
+    "language": "en",
+    "country": "UK"
+  },
+  {
+    "title": "New York Times - Business",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+    "description": "NYTのビジネスニュース",
+    "category": "メディア",
+    "source": "New York Times",
+    "organization": "The New York Times Company",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "New York Times - Technology",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "description": "NYTのテクノロジーニュース",
+    "category": "メディア",
+    "source": "New York Times",
+    "organization": "The New York Times Company",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "New York Times - World",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+    "description": "NYTの世界ニュース",
+    "category": "メディア",
+    "source": "New York Times",
+    "organization": "The New York Times Company",
+    "language": "en",
+    "country": "US"
+  },
+  {
+    "title": "UN News",
+    "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+    "description": "国連の最新ニュース",
+    "category": "国際機関",
+    "source": "United Nations",
+    "organization": "国際連合",
+    "language": "en",
+    "country": "INT"
+  },
+  {
+    "title": "WHO EMRO - Press Releases",
+    "url": "https://www.emro.who.int/rss-feeds.html",
+    "description": "WHO東地中海地域事務所のプレスリリース",
+    "category": "国際機関",
+    "source": "WHO",
+    "organization": "世界保健機関",
+    "language": "en",
+    "country": "INT"
+  },
+  {
+    "title": "IMF - What's New",
+    "url": "https://www.imf.org/en/rss-list/feed?category=WHATSNEW",
+    "description": "国際通貨基金の最新情報",
+    "category": "国際機関",
+    "source": "IMF",
+    "organization": "国際通貨基金",
+    "language": "en",
+    "country": "INT"
+  },
+  {
+    "title": "ASEAN News",
+    "url": "https://asean.org/category/news/feed",
+    "description": "ASEAN（東南アジア諸国連合）のニュース",
+    "category": "国際機関",
+    "source": "ASEAN",
+    "organization": "東南アジア諸国連合",
+    "language": "en",
+    "country": "INT"
+  },
+  {
+    "title": "BBC World News",
+    "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+    "description": "BBCの世界ニュース",
+    "category": "メディア",
+    "source": "BBC",
+    "organization": "British Broadcasting Corporation",
+    "language": "en",
+    "country": "UK"
+  },
+  {
+    "title": "BBC Asia News",
+    "url": "http://feeds.bbci.co.uk/news/world/asia/rss.xml",
+    "description": "BBCのアジアニュース",
+    "category": "メディア",
+    "source": "BBC",
+    "organization": "British Broadcasting Corporation",
+    "language": "en",
+    "country": "UK"
+  }
+]
