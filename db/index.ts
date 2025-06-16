@@ -1,8 +1,9 @@
-// This file conditionally exports the correct database instance
-// based on the runtime environment
+// Simple database connection for Vercel
+import { neon } from '@neondatabase/serverless';
+import { drizzle } from 'drizzle-orm/neon-http';
 
-// For server-side code (API routes, SSR)
-export * from './index-node';
+const sql = neon(process.env.DATABASE_URL!);
+export const db = drizzle(sql);
 
-// Re-export schema for convenience
+// Export all schema types for convenience
 export * from "./schema";
