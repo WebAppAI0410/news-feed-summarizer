@@ -135,9 +135,12 @@ export default function Home() {
   const queryClient = useQueryClient();
   
   // カテゴリーでフィルタリング
-  const filteredArticles = articles?.filter((article: ArticleWithFeed) => {
+  const filteredArticles = articles?.filter((article) => {
     if (!selectedCategory) return true;
-    return article.feedCategory === selectedCategory;
+    if ('feedCategory' in article) {
+      return article.feedCategory === selectedCategory;
+    }
+    return article.feed?.category === selectedCategory;
   });
   
   // カテゴリー一覧を取得
