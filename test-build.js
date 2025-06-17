@@ -2,6 +2,7 @@ console.log('Testing build environment...');
 console.log('Node version:', process.version);
 console.log('Current directory:', process.cwd());
 console.log('DATABASE_URL exists:', !!process.env.DATABASE_URL);
+console.log('DATABASE_URL value:', process.env.DATABASE_URL ? 'Set (hidden)' : 'Not set');
 
 // Test if we can require basic modules
 try {

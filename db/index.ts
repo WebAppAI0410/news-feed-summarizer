@@ -1,20 +1,14 @@
-// Database connection - simplified for debugging
-let db: any;
+import { drizzle } from 'drizzle-orm/neon-http';
+import { neon } from '@neondatabase/serverless';
+import * as schema from './schema';
 
-try {
-  // Try to import drizzle-orm/neon-http
-  const drizzleModule = require('drizzle-orm/neon-http');
-  if (drizzleModule && drizzleModule.drizzle) {
-    db = drizzleModule.drizzle(process.env.DATABASE_URL!);
-  } else {
-    // Fallback if drizzle is not available
-    console.error('drizzle-orm/neon-http does not export drizzle function');
-    db = {}; // Mock db object for build
-  }
-} catch (error) {
-  console.error('Failed to import drizzle-orm/neon-http:', error);
-  db = {}; // Mock db object for build
+const databaseUrl = process.env.DATABASE_URL;
+
+if (!databaseUrl) {
+  throw new Error('DATABASE_URL environment variable is not set');
 }
 
-export { db };
+const sql = neon(databaseUrl);
+export const db = drizzle(sql, { schema });
+
 export * from './schema';
