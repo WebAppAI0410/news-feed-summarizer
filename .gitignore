@@ -72,3 +72,4 @@ logs/
 *.temp
 tmp/
 temp/
+.env
