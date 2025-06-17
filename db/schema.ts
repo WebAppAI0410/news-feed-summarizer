@@ -1,7 +1,5 @@
 import type { InferInsertModel, InferSelectModel } from "drizzle-orm";
-import * as pgCore from "drizzle-orm/pg-core";
-
-const {
+import { 
   integer,
   pgTable,
   text,
@@ -9,15 +7,8 @@ const {
   json,
   primaryKey,
   index,
-} = pgCore;
-
-// Use pgCore.boolean or provide fallback
-const boolean = pgCore.boolean || ((name: string) => {
-  return text(name)
-    .$type<boolean>()
-    .notNull()
-    .default("false");
-});
+  boolean
+} from "drizzle-orm/pg-core";
 
 // RSSフィードテーブル
 export const feeds = pgTable("feeds", {
