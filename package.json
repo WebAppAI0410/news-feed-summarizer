@@ -30,7 +30,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "next": "15.3.3",
-    "drizzle-orm": "^0.43.1",
+    "drizzle-orm": "0.43.1",
     "@neondatabase/serverless": "^1.0.1",
     "@tanstack/react-query": "^5.76.1",
     "pg": "^8.12.0",

@@ -1,6 +1,5 @@
-// @ts-nocheck
+import type { InferInsertModel, InferSelectModel } from "drizzle-orm";
 import {
-  boolean,
   integer,
   pgTable,
   text,
@@ -8,6 +7,8 @@ import {
   json,
   primaryKey,
   index,
+  // @ts-expect-error - boolean import issue in build
+  boolean,
 } from "drizzle-orm/pg-core";
 
 // RSSフィードテーブル
@@ -135,19 +136,19 @@ export const userSettings = pgTable("user_settings", {
 });
 
 // 型定義をエクスポート
-export type Feed = typeof feeds.$inferSelect;
-export type NewFeed = typeof feeds.$inferInsert;
-export type Article = typeof articles.$inferSelect;
-export type NewArticle = typeof articles.$inferInsert;
-export type Summary = typeof summaries.$inferSelect;
-export type NewSummary = typeof summaries.$inferInsert;
-export type User = typeof users.$inferSelect;
-export type NewUser = typeof users.$inferInsert;
-export type Account = typeof accounts.$inferSelect;
-export type NewAccount = typeof accounts.$inferInsert;
-export type Session = typeof sessions.$inferSelect;
-export type NewSession = typeof sessions.$inferInsert;
-export type VerificationToken = typeof verificationTokens.$inferSelect;
-export type NewVerificationToken = typeof verificationTokens.$inferInsert;
-export type UserSetting = typeof userSettings.$inferSelect;
-export type NewUserSetting = typeof userSettings.$inferInsert;
+export type Feed = InferSelectModel<typeof feeds>;
+export type NewFeed = InferInsertModel<typeof feeds>;
+export type Article = InferSelectModel<typeof articles>;
+export type NewArticle = InferInsertModel<typeof articles>;
+export type Summary = InferSelectModel<typeof summaries>;
+export type NewSummary = InferInsertModel<typeof summaries>;
+export type User = InferSelectModel<typeof users>;
+export type NewUser = InferInsertModel<typeof users>;
+export type Account = InferSelectModel<typeof accounts>;
+export type NewAccount = InferInsertModel<typeof accounts>;
+export type Session = InferSelectModel<typeof sessions>;
+export type NewSession = InferInsertModel<typeof sessions>;
+export type VerificationToken = InferSelectModel<typeof verificationTokens>;
+export type NewVerificationToken = InferInsertModel<typeof verificationTokens>;
+export type UserSetting = InferSelectModel<typeof userSettings>;
+export type NewUserSetting = InferInsertModel<typeof userSettings>;
