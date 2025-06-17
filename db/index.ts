@@ -1,9 +1,10 @@
-// Simple database connection for Vercel
+// Database connection for Vercel Edge Runtime
 import { neon } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-serverless';
+import * as schema from './schema';
 
 const sql = neon(process.env.DATABASE_URL!);
-export const db = drizzle(sql);
+export const db = drizzle(sql, { schema });
 
 // Export all schema types for convenience
 export * from "./schema";
