@@ -13,7 +13,14 @@ const nextConfig = {
     NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   },
-  webpack: (config: any) => {
+  webpack: (config: any, { webpack }) => {
+    // Ignore cloudflare:sockets module which is not needed for Vercel
+    config.plugins.push(
+      new webpack.IgnorePlugin({
+        resourceRegExp: /^cloudflare:sockets$/,
+      })
+    );
+    
     config.externals.push({
       'pg': 'pg',
       'pg-native': 'pg-native',
