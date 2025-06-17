@@ -18,12 +18,18 @@ export interface RSSFeed {
   items: RSSItem[];
 }
 
+// Dynamic import for server-side RSS parsing
+let Parser: any;
+
 // Node.js環境用のRSSパーサー
 export async function parseRSSFeed(url: string): Promise<RSSFeed> {
   try {
     // サーバーサイドでのみDOMParserが利用できないので、
-    // rss-parserライブラリを使用
-    const Parser = require('rss-parser');
+    // rss-parserライブラリを動的インポートで使用
+    if (!Parser) {
+      Parser = (await import('rss-parser')).default;
+    }
+    
     const parser = new Parser({
       headers: {
         'User-Agent': 'RSS News Summarizer/1.0',
