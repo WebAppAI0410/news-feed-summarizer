@@ -7,9 +7,15 @@ import {
   json,
   primaryKey,
   index,
-  // @ts-expect-error - boolean import issue in build
-  boolean,
 } from "drizzle-orm/pg-core";
+
+// Workaround for boolean import issue
+const boolean = (name: string) => {
+  return text(name)
+    .$type<boolean>()
+    .notNull()
+    .default("false");
+};
 
 // RSSフィードテーブル
 export const feeds = pgTable("feeds", {
