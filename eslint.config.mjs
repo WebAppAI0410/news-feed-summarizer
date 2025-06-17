@@ -17,7 +17,8 @@ const eslintConfig = [
         "argsIgnorePattern": "^_",
         "varsIgnorePattern": "^_" 
       }],
-      "@typescript-eslint/no-explicit-any": "warn"
+      "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/no-require-imports": "off"
     }
   }
 ];

@@ -19,6 +19,7 @@ export interface RSSFeed {
 }
 
 // Dynamic import for server-side RSS parsing
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let Parser: any;
 
 // Node.js環境用のRSSパーサー
