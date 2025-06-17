@@ -19,26 +19,6 @@ export async function GET(request: NextRequest) {
     // オフセット計算
     const offset = (page - 1) * limit;
     
-    // 基本クエリ
-    let query = db
-      .select({
-        id: articles.id,
-        title: articles.title,
-        link: articles.link,
-        description: articles.description,
-        contentSnippet: articles.contentSnippet,
-        publishedAt: articles.publishedAt,
-        createdAt: articles.createdAt,
-        author: articles.author,
-        categories: articles.categories,
-        feedId: articles.feedId,
-        feedTitle: feeds.title,
-        feedSource: feeds.source,
-        feedCategory: feeds.category,
-      })
-      .from(articles)
-      .leftJoin(feeds, eq(articles.feedId, feeds.id));
-    
     // フィルタリング条件を構築
     const conditions = [];
     
@@ -61,28 +41,36 @@ export async function GET(request: NextRequest) {
       conditions.push(gte(articles.publishedAt, sinceDate));
     }
     
-    // 条件を適用
-    if (conditions.length > 0) {
-      query = query.where(and(...conditions));
-    }
-    
-    // ソートとページネーション
-    const articlesData = await query
+    // 基本クエリ（条件付き）
+    const articlesData = await db
+      .select({
+        id: articles.id,
+        title: articles.title,
+        link: articles.link,
+        description: articles.description,
+        contentSnippet: articles.contentSnippet,
+        publishedAt: articles.publishedAt,
+        createdAt: articles.createdAt,
+        author: articles.author,
+        categories: articles.categories,
+        feedId: articles.feedId,
+        feedTitle: feeds.title,
+        feedSource: feeds.source,
+        feedCategory: feeds.category,
+      })
+      .from(articles)
+      .leftJoin(feeds, eq(articles.feedId, feeds.id))
+      .where(conditions.length > 0 ? and(...conditions) : undefined)
       .orderBy(desc(articles.publishedAt))
       .limit(limit)
       .offset(offset);
     
     // 総件数を取得（ページネーション用）
-    let countQuery = db
+    const [{ count: totalCount }] = await db
       .select({ count: sql<number>`count(*)` })
       .from(articles)
-      .leftJoin(feeds, eq(articles.feedId, feeds.id));
-    
-    if (conditions.length > 0) {
-      countQuery = countQuery.where(and(...conditions));
-    }
-    
-    const [{ count: totalCount }] = await countQuery;
+      .leftJoin(feeds, eq(articles.feedId, feeds.id))
+      .where(conditions.length > 0 ? and(...conditions) : undefined);
     
     return NextResponse.json({
       articles: articlesData,
